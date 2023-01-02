@@ -1,0 +1,43 @@
+.card {
+  display: grid;
+  grid-template-areas: "ava title title" "ava des des" "ava rate rate" "ava null null";
+  row-gap: 15px;
+  column-gap: 15px; }
+  @media (max-width: 768px) {
+    .card {
+      column-gap: 5px;
+      row-gap: 10px;
+      grid-template-areas: "ava title title" "des des des" "des des des" "rate rate rate"; } }
+  .card__rate {
+    grid-area: rate; }
+    @media (max-width: 768px) {
+      .card__rate {
+        margin: 0 0 0 auto; } }
+  .card__description {
+    white-space: normal;
+    grid-area: des; }
+  .card__title {
+    grid-area: title; }
+  .card__avatar {
+    grid-area: ava; }
+
+.movie-img {
+  width: 180px;
+  height: 260px; }
+  @media (max-width: 768px) {
+    .movie-img {
+      width: 100px;
+      height: 140px; } }
+
+.title {
+  display: flex;
+  justify-content: space-between; }
+  .title__name {
+    width: 250px;
+    font-size: 16px;
+    white-space: normal; }
+    @media (max-width: 768px) {
+      .title__name {
+        width: 150px;
+        font-size: 14px; } }
+
